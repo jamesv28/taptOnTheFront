@@ -2,8 +2,11 @@
     <div class="container-fluid">
         <h2 class="text-center">Beer Types</h2>
         <div class="col-md-10 col-sm-10 col-sm-offset-1 col-md-offset-1">
-            <div class="col-md-4 col-sm-4 beerTypes" ng-repeat="beerType in beerTypes">
-                <h3>{{ beerType.symbol }}</h3>
+            <div class="col-md-3 col-sm-3 beerTypes" ng-repeat="beerType in beerTypes" >
+                <a  uib-tooltip="{{beerType.description}}">
+                <h5>{{ beerType.symbol }}</h5>
+                    </a>
+                <p>{{ beerType.alcoholnum }}</p>
             </div>
         </div>
     </div>

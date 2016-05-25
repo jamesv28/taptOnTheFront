@@ -76,6 +76,18 @@ strong {
   height: 300px;
   color: #FFFFF0; }
 
+/************* beeriodic table **************/
+.beerTypes {
+  text-align: center;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 5px;
+  padding: 20px;
+  border: 1px solid black;
+  margin-bottom: 5px; }
+  .beerTypes p {
+    font-size: .8rem; }
+
 /************** google maps ***************/
 .angular-google-map-container {
   height: 400px; }
