@@ -3,7 +3,7 @@ angular.module('app')
 
         beerTypesService.getBeerTypes().
             then(function(data) {
-            $scope.beerTypes = data;
+            $scope.beerTypes = data.data;
             console.log('beer types', $scope.beerTypes);
         })
 

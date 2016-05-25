@@ -76,4 +76,8 @@ strong {
   height: 300px;
   color: #FFFFF0; }
 
+/************** google maps ***************/
+.angular-google-map-container {
+  height: 400px; }
+
 /*# sourceMappingURL=main.css.map */
