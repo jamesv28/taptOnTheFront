@@ -4,6 +4,9 @@
 
 $fireBrick: #B22222;
 $ivory: #FFFFF0;
+$crimson: #DC143C;
+$skyblue : #00B2EE;
+$blue: #1E90FF;
 
 /******* General ******/
 html, body {
@@ -27,8 +30,8 @@ strong {
   transition: all .5s;
 }
 
-btn-primary.btn-outline {
-  color: #428bca;
+.btn-primary.btn-outline {
+  color: $blue;
 }
 
 .btn-success.btn-outline {
