@@ -17,32 +17,47 @@
                 <p class="indBeerDescTitle"><strong>Clarity</strong></p>
                 <p>{{ beer.clarity }}</p>
                 <p class="indBeerDescTitle"><strong>Visual Carbonation</strong></p>
-                <p>{{}}</p>
+                <p>{{beer.carbonationvisual}}</p>
             </div> <!-- end of appearance -->
 
             <div class="col-md-3 col-sm-3">
                 <h3 class="text-center">Flavor/Aromatics</h3>
                 <p class="indBeerDescTitle"><strong>Alcohol </strong></p>
+                <p>{{beer.alcoholtxt}}</p>
                 <p class="indBeerDescTitle"><strong>Malt</strong></p>
+                <P>{{beer.malt}}</P>
                 <p class="indBeerDescTitle"><strong>Hops</strong></p>
+                <p>{{beer.hop}}</p>
                 <p class="indBeerDescTitle"><strong>Esters</strong></p>
+                <p>{{beer.esters}}</p>
                 <p class="indBeerDescTitle"><strong>Phenols</strong></p>
+                <p>{{beer.phenols}}</p>
             </div> <!-- end of flavor -->
 
             <div class="col-md-3 col-sm-3">
                 <h3 class="text-center">Sensations</h3>
                 <p class="indBeerDescTitle"><strong>Body</strong></p>
+                <p>{{beer.body}}</p>
                 <p class="indBeerDescTitle"><strong>Carbonation</strong></p>
+                <p>{{beer.carbonationtaste}}</p>
                 <p class="indBeerDescTitle"><strong>Finish Length</strong></p>
-                <p class="indBeerDescTitle"><strong>Attenuation</strong></p>
+                <p>{{beer.finishlength}}</p>
+                <p class="indBeerDescTitle"><strong>Attenuation</strong>&nbsp;
+                    <i tooltip-placement="right" uib-tooltip="attenuation is the percentage that measures the conversion of sugars into alcohol and carbon dioxide by the fermentation process; a more attenuated beer will generally be drier and more alcoholic than a less attenuated beer made from the same wort." class="fa fa-question-circle-o" aria-hidden="true"></i>
+                </p>
+                <p>{{beer.attenuation}}</p>
             </div><!-- end of sensations -->
 
             <div class="col-md-3 col-sm-3">
                 <h3 class="text-center">Ingredients</h3>
                 <p class="indBeerDescTitle"><strong>Hops</strong></p>
+                <p>{{beer.hopsingr}}</p>
                 <p class="indBeerDescTitle"><strong>Malt</strong></p>
+                <p>{{beer.maltingr}}</p>
                 <p class="indBeerDescTitle"><strong>Water</strong></p>
+                <p>{{beer.water}}</p>
                 <p class="indBeerDescTitle"><strong>Yeast</strong></p>
+                <p>{{beer.yeast}}</p>
             </div> <!-- end of ingredients -->
         </div>
     </div>
