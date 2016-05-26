@@ -1,3 +1,9 @@
-/**
- * Created by jamesvolmert on 5/25/16.
- */
+angular.module('app')
+    .config(function ($stateProvider, $urlRouterProvider) {
+        $stateProvider
+            .state('indBeerTypes', {
+                url: "/indBeerTypes/:id",
+                templateUrl: 'app/indBeerType/indBeerType-template.html',
+                controller: 'indBeerTypesCtrl'
+            })
+    });  //end of route
