@@ -4,6 +4,6 @@ angular
         $stateProvider
             .state('signUp', {
                 url: '/signUp',
-                templateUrl: 'app/loggin/signUp-template.html'
+                templateUrl: 'app/logging/signUp-template.html'
             })
     }); //end of route
