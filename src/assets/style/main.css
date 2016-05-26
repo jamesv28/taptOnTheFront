@@ -113,4 +113,9 @@ strong {
       text-align: center;
       mamargin-bottom: 20px; }
 
+.indBeerDesc h3, .indBeerDesc .indBeerDescTitle {
+  color: #B22222; }
+.indBeerDesc h3 {
+  margin-bottom: 15px; }
+
 /*# sourceMappingURL=main.css.map */
