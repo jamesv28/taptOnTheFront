@@ -1,6 +1,9 @@
 <div class="row header">
     <div class="container-fluid">
         <h2 class="text-center">pub crawl</h2>
-        <ui-gmap-google-map center='map.center' zoom='map.zoom' ></ui-gmap-google-map>
+        <div ng-if="map">
+            <h2>hello keith</h2>
+            <ui-gmap-google-map center='map.center' zoom='map.zoom' ></ui-gmap-google-map>
+        </div>
     </div>
 </div>
