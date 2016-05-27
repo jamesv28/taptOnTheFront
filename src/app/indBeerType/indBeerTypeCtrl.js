@@ -5,5 +5,6 @@ angular.module('app')
             .then(function (data) {
                 $scope.beer = data.data;
                 console.log(data);
-            })
+                $scope.food = getIndBeersService.foodPairings(data.data.foodpairings);
+            });
     }]); // end of controller

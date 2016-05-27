@@ -25,6 +25,13 @@ strong {
   color: $fireBrick;
 }
 
+.line {
+  margin:0 auto;
+  background: $fireBrick;
+  height: 5px;
+  width: 15%;;
+  margin-bottom: 15px;
+}
 .btn-outline {
   background-color: transparent;
   color: inherit;

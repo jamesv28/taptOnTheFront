@@ -10,8 +10,16 @@
         <h2 class="text-center">{{beer.name}}</h2>
         <div class="col-md-10 col-sm-10 col-sm-offset-1 col-md-offset-1">
             <p>{{beer.description}}</p>
+            <h3 class="text-center">Food Pairings</h3>
+            <i style="margin: auto; display: block;" class="fa fa-spoon fa-2x red "></i>
+            <div class="row">
+                <div class="col-md-4 col-sm-4">
+                    <img ng-src="assets/img/hamburger.png" alt="hamburger icon">
+                </div>
+            </div>
             <div class="col-md-3 col-sm-3">
                 <h3 class="text-center">Appearance</h3>
+                <div class="line"></div>
                 <p class="indBeerDescTitle"><strong>Color</strong></p>
                 <p>{{ beer.colortxt  }}</p>
                 <p class="indBeerDescTitle"><strong>Clarity</strong></p>
@@ -22,6 +30,7 @@
 
             <div class="col-md-3 col-sm-3">
                 <h3 class="text-center">Flavor/Aromatics</h3>
+                <div class="line"></div>
                 <p class="indBeerDescTitle"><strong>Alcohol </strong></p>
                 <p>{{beer.alcoholtxt}}</p>
                 <p class="indBeerDescTitle"><strong>Malt</strong></p>
@@ -36,6 +45,7 @@
 
             <div class="col-md-3 col-sm-3">
                 <h3 class="text-center">Sensations</h3>
+                <div class="line"></div>
                 <p class="indBeerDescTitle"><strong>Body</strong></p>
                 <p>{{beer.body}}</p>
                 <p class="indBeerDescTitle"><strong>Carbonation</strong></p>
@@ -50,6 +60,7 @@
 
             <div class="col-md-3 col-sm-3">
                 <h3 class="text-center">Ingredients</h3>
+                <div class="line"></div>
                 <p class="indBeerDescTitle"><strong>Hops</strong></p>
                 <p>{{beer.hopsingr}}</p>
                 <p class="indBeerDescTitle"><strong>Malt</strong></p>

@@ -10,6 +10,13 @@ angular
                     .then(function (data) {
                         return data;
                     })
+                    .catch(function (err) {
+                        return err;
+                    });
+                
+            },
+            foodPairings: function (message) {
+               return message.split(',');
             }
         }
     }]); // end of service
