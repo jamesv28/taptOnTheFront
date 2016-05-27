@@ -3,6 +3,6 @@ angular
         [
             'ui.router',
             'ui.bootstrap',
-            'ngAnimate'
-            // 'uiGmapgoogle-maps'
+            'ngAnimate',
+            'uiGmapgoogle-maps'
         ]);
