@@ -5,7 +5,6 @@ angular
             findLattitude: function () {
                 var promise = new Promise(function (resolve, reject) {
                     var lat;
-                  
                     navigator.geolocation.getCurrentPosition(foundLocation );
                     function foundLocation(position) {
                         lat  = position.coords.latitude;
@@ -15,7 +14,6 @@ angular
 
                 });
                 // console.log('promise', promise);
-
                 return promise;
             },
             findLongitude: function () {
@@ -27,7 +25,6 @@ angular
                         resolve(long);
                     } 
                 });
-               
                 return promise2;
             }
         }
