@@ -29,7 +29,8 @@ angular
             },
             findBrewery: function (lat,long) {
                 return $http({
-                    method: 'jsonp',
+                    method: 'get',
+                    // method: 'jsop',
                     url: 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=' + lat + ',' + long + '&radius=8046.72&keyword=brewery&key=AIzaSyDPaIYcTqVeU6gQub5ChIgJHsxDI_wvIz4'
                 }).then(function (pubs) {
                     return pubs;

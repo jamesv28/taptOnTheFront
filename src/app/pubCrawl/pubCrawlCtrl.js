@@ -28,7 +28,7 @@
         }).then(function () {
             pubCrawlService.findBrewery(lat,long)
                 .then(function (beer) {
-                    console.log('beer locations',beer.results);
+                    console.log('beer locations',beer);
                 });
         });
 
