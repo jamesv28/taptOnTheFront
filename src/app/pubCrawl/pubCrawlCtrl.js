@@ -9,8 +9,12 @@
         var p1 = pubCrawlService.findLattitude();
         var p2 = pubCrawlService.findLongitude();
 
+        var lat, long;
+
         Promise.all([p1,p2]).then(function (data) {
-            console.log('primise all', data);
+            // console.log('primise all', data);
+            lat = data[0];
+            long = data[1];
             $scope.map = {
                 center: {
                     latitude: data[0],
@@ -18,8 +22,14 @@
                 },
                 zoom: 8
             };
-            console.log('map', $scope.map);
+
+            // console.log('map', $scope.map);
             $scope.$apply();
+        }).then(function () {
+            pubCrawlService.findBrewery(lat,long)
+                .then(function (beer) {
+                    console.log('beer locations',beer.results);
+                });
         });
 
         var styleArray = [
@@ -192,6 +202,7 @@
         $scope.options = {
             styles: styleArray
         };
+
 
         uiGmapGoogleMapApi.then(function(maps) {
             // console.log('this is a map', maps);

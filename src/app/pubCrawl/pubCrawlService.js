@@ -26,6 +26,19 @@ angular
                     } 
                 });
                 return promise2;
+            },
+            findBrewery: function (lat,long) {
+                return $http({
+                    method: 'jsonp',
+                    url: 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=' + lat + ',' + long + '&radius=8046.72&keyword=brewery&key=AIzaSyDPaIYcTqVeU6gQub5ChIgJHsxDI_wvIz4'
+                }).then(function (pubs) {
+                    return pubs;
+                })
             }
+            // https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=39.683164999999995,-104.9610222&radius=8046.72&keyword=brewery&key=AIzaSyDPaIYcTqVeU6gQub5ChIgJHsxDI_wvIz4
+            //api key: AIzaSyDPaIYcTqVeU6gQub5ChIgJHsxDI_wvIz4
+            // dnever lat & long 39.7392° N, 104.9903° W
+
+
         }
     }]);
